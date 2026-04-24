@@ -1,0 +1,5 @@
+# Example placeholder only.
+# Replace this file with the real Cisco day-0 bootstrap content generated for your onboarding workflow.
+# Do not commit real registration keys or credentials into git.
+#
+# Prefer secret variables or a secure secret store instead of storing production bootstrap data in the repository.

@@ -1,0 +1,29 @@
+deployment_resource_group_name = "rg-cisco-ftdv-example"
+network_resource_group_name    = "rg-network-example"
+virtual_network_name           = "vnet-example"
+subnet_name                    = "snet-ftdv"
+create_subnet                  = true
+expected_subnet_cidr           = "10.0.10.0/28"
+
+ftd_vm_name                    = "ftdv01"
+location                       = "westeurope"
+availability_zone              = "1"
+vm_size                        = "Standard_D8s_v3"
+gallery_image_version_id       = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-ftdv-images-example/providers/Microsoft.Compute/galleries/acgNetworkAppliances/images/ftdv-byol-7-7-0/versions/1.0.0"
+
+management_allowed_cidrs       = ["203.0.113.10/32"]
+enable_management_public_ip    = true
+management_public_ip_dns_label = "ftdv01-example"
+
+management_private_ip          = null
+diagnostic_private_ip          = null
+outside_private_ip             = null
+inside_private_ip              = null
+
+enable_accelerated_networking  = true
+os_disk_storage_account_type   = "Premium_LRS"
+
+tags = {
+  environment = "example"
+  owner       = "network-security"
+}
